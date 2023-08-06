@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__, template_folder='template')
 
 
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://admin:password@database-1.cip14zt0knxl.us-east-1.rds.amazonaws.com/flaskaws'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+mysqlconnector://admin:password@database-1.cip14zt0knxl.us-east-1.rds.amazonaws.com/flaskaws'
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 app.secret_key = "somethingunique"
 
